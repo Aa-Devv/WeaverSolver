@@ -26,7 +26,7 @@ public class WeaverSolver {
             outroWord = s.nextLine().toUpperCase();
             if (outroWord.equalsIgnoreCase("q")) return;
             if (isTheWordInTheList(outroWord) && !outroWord.equalsIgnoreCase(introWord)) break;
-            if (outroWord.equalsIgnoreCase(introWord)) System.out.println("The two words can't be the same");
+            if (outroWord.equalsIgnoreCase(introWord)) System.out.println("The two words can't be the same! please try again.");
             else System.out.println("You can only enter a word that is on the list! Please try again.");
 
         }
