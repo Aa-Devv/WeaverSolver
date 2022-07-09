@@ -30,6 +30,7 @@ public class WeaverSolver {
             else System.out.println("You can only enter a word that is on the list! Please try again.");
 
         }
+        System.out.println("Computing...");
         int opt = 1;
         ArrayList<String> solution;
         while (true) {
