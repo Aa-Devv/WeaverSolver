@@ -25,8 +25,10 @@ public class WeaverSolver {
             System.out.print("Enter the last word: ");
             outroWord = s.nextLine().toUpperCase();
             if (outroWord.equalsIgnoreCase("q")) return;
-            if (isTheWordInTheList(outroWord)) break;
-            System.out.println("You can only enter a word that is on the list! Please try again.");
+            if (isTheWordInTheList(outroWord) && !outroWord.equalsIgnoreCase(introWord)) break;
+            if (outroWord.equalsIgnoreCase(introWord)) System.out.println("The two words can't be the same");
+            else System.out.println("You can only enter a word that is on the list! Please try again.");
+
         }
         int opt = 1;
         ArrayList<String> solution;
