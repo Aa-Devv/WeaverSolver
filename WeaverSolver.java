@@ -268,7 +268,6 @@ public class WeaverSolver {
             } else {
                 wordsTried.add(new Guess(newWord, newTrial));
                 which = numberOfLetters - 1;
-                //System.out.println(trials.get(trials.size()-1).word+" "+newWord);
                 if (newWord.equalsIgnoreCase(outroWord)) break;
                 introWord = newWord;
                 newTrial = new Trial(introWord, which);
