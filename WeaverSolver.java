@@ -44,12 +44,17 @@ public class WeaverSolver {
                 break;
 
             } catch (java.lang.IndexOutOfBoundsException e) {
+                if (opt > words4.length) {
+                    System.out.println("Sorry, there's not enough words in the list to transform " + introWord + " to " + outroWord + ".");
+                    return;
+                }
                 opt++;
                 wordsTried = new ArrayList<>();
             }
 
 
         }
+
 
     }
 
